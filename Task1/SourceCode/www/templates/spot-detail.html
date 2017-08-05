@@ -1,0 +1,39 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="{{chat.name}}">
+  <ion-content class="padding">
+
+<button class = "button button-block button-calm" ui-sref="tab.test">Ecology test</button>
+<button class = "button button-block button-calm">Play Game</button>
+<button class = "button button-block button-assertive">View User Review</button>
+
+<div class = "list">
+
+   <div class = "item item-divider">Environmental Information</div>
+   <div class = "item">Name : {{chat.name}}</div>
+   <div class = "item">Temperature:30°C</div>
+   <div class = "item">Absolute Humidity :30°C/86°F</div>
+   <div class = "item">Wind Speed:1 mph</div>
+   <div class = "item">CO2 :600 - 800 ppm</div>
+
+
+
+   <div class = "item item-divider">Images</div>
+   <div class = "item"><img src = "img/bisana/1.jpg" style="height: 300px;width: 100%;"></div>
+   <div class = "item"><img src = "img/bisana/2.jpg" style="height: 300px;width: 100%;"></div>
+   <div class = "item"><img src = "img/bisana/3.jpg" style="height: 300px;width: 100%;"></div>
+   <div class = "item item-divider">Video</div>
+<div class="video-container">
+<iframe src="http://www.youtube.com/embed/mHxsW9GsfcA?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+
+
+
+
+  </ion-content>
+</ion-view>
